@@ -21,7 +21,7 @@
  */
  
 #include <gb/gb.h>
-#include <rand.h>
+#include <gb/rand.h>
 #include "utils.h"
 
 static UWORD seed;
@@ -85,7 +85,7 @@ WORD min (WORD x, WORD y) {
 }
 
 WORD random (WORD value) {
-	return ((UWORD)rand() * value) >> 8;
+	return ((UWORD)_randw() * value) >> 8;
 }
 
 WORD randomRange (WORD min, WORD max) {

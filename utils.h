@@ -32,3 +32,5 @@ WORD lerp (WORD norm, WORD value);
 WORD lerpRange (WORD norm, WORD min, WORD max);
 WORD sin (WORD x);
 WORD cos (WORD x);
+
+void initMath ();
